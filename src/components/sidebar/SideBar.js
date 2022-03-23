@@ -1,8 +1,8 @@
 import React from 'react';
-
-import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 
+import { signOut } from 'firebase/auth';
+import { auth } from 'libs/firebase';
 import { SideBarItems, SideBarContainer, SideBarItem, ToggleHamburger } from './styles';
 
 function SideBar() {
@@ -14,6 +14,11 @@ function SideBar() {
       sideBar.style.left = "-100vw";
     }
   }
+
+  function onLogoutRequest(evt) {
+    signOut(auth)
+  }
+
   return ( 
     <aside>
       <ToggleHamburger>
@@ -38,7 +43,7 @@ function SideBar() {
         <SideBarContainer>
           <SideBarItem>Authentication</SideBarItem>
           <SideBarItem>Other Pages</SideBarItem>
-          <SideBarItem><Link to="/">Sign Out</Link></SideBarItem>
+          <SideBarItem onClick={ onLogoutRequest }>Sign Out</SideBarItem>
         </SideBarContainer>
       </SideBarItems>
     </aside>

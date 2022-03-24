@@ -20,9 +20,9 @@ const PanelsItem = styled.li`
   cursor: pointer;
 `;
 
-const AllProductsContainer = styled.div`
+const ProductsContainer = styled.div`
   background-color: #ffffff;
-  height: 100vh;
+  height: 83vh;
   
   h1 {
     font-size: 1.5rem;
@@ -32,4 +32,4 @@ const AllProductsContainer = styled.div`
   }
 `;
 
-export { PanelsStyles, PanelsItems, PanelsItem, AllProductsContainer }
+export { PanelsStyles, PanelsItems, PanelsItem, ProductsContainer }

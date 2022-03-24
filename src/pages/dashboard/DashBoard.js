@@ -6,7 +6,6 @@ import { auth } from 'libs/firebase';
 import { DashBoardStyles } from './styles';
 import { AppBar } from '../../components/appbar';
 import { SideBar } from '../../components/sidebar';
-import { Panels } from '../../components/panels';
 
 function DashBoard(props) {
   const [isUser, setIsUser] = useState(false);
@@ -29,14 +28,13 @@ function DashBoard(props) {
         </header>
         <DashBoardStyles>
           <SideBar/>
-          <Panels/>
+          <Outlet/>
         </DashBoardStyles>
       </>
     )
   } else {
     return null
   }
-
 }
 
 export default DashBoard;

@@ -29,7 +29,7 @@ const SideBarItems = styled.ul`
   top: 107px;
   left: -100vw;
   transition: ease-in-out 0.4s;
-  height: 100%;
+  height: 93vh;
   z-index: 1;
 
   @media only screen and (min-width: 700px) {

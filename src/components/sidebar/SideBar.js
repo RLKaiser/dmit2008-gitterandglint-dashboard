@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 import { signOut } from 'firebase/auth';
@@ -30,9 +31,10 @@ function SideBar() {
         </SideBarContainer>
         <SideBarContainer>
           <SideBarItem>Collections</SideBarItem>
-          <SideBarItem color="#525352">Products</SideBarItem>
+          <SideBarItem><Link to="/dashboard">All Products</Link></SideBarItem>
+          <SideBarItem><Link to="add">Add Product</Link></SideBarItem>
+          <SideBarItem><Link to="edit">Edit Product</Link></SideBarItem>
           <SideBarItem>Categories</SideBarItem>
-          <SideBarItem>Add Product</SideBarItem>
           <SideBarItem>Orders</SideBarItem>
           <SideBarItem>Reviews</SideBarItem>
         </SideBarContainer>

@@ -30,10 +30,10 @@ function SideBar() {
           <SideBarItem>Dashboard</SideBarItem>
         </SideBarContainer>
         <SideBarContainer>
-          <SideBarItem>Collections</SideBarItem>
           <SideBarItem><Link to="/dashboard">All Products</Link></SideBarItem>
           <SideBarItem><Link to="add">Add Product</Link></SideBarItem>
           <SideBarItem><Link to="edit">Edit Product</Link></SideBarItem>
+          <SideBarItem>Collections</SideBarItem>
           <SideBarItem>Categories</SideBarItem>
           <SideBarItem>Orders</SideBarItem>
           <SideBarItem>Reviews</SideBarItem>

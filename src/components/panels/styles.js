@@ -23,12 +23,14 @@ const PanelsItem = styled.li`
 const ProductsContainer = styled.div`
   background-color: #ffffff;
   height: 83vh;
+  padding: 1rem;
   
   h1 {
     font-size: 1.5rem;
     width: 100%;
     border-bottom: 4px solid #BED6C7;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 `;
 

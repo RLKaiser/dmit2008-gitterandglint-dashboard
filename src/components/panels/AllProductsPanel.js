@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { PanelsStyles, PanelsItems, PanelsItem, ProductsContainer } from './styles';
+import { ProductCard } from './../products/ProductCard';
 
 function AllProductsPanel(props) {
   return ( 
@@ -11,6 +12,7 @@ function AllProductsPanel(props) {
       </PanelsItems>
       <ProductsContainer>
         <h1>All Products</h1>
+        <ProductCard/>
       </ProductsContainer>
     </PanelsStyles>
    );
